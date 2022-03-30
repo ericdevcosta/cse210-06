@@ -10,7 +10,7 @@ class beam(Actor):
     The responsibility of rider is to move itself.
 
     Attributes:
-        _points (int): The number of points the food is worth.
+        _points (int): The number of points the asteroid is worth.
     """
     def __init__(self, ):
         super().__init__()

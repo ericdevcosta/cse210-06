@@ -43,12 +43,16 @@ class HandleCollisionsAction(Action):
         score = cast.get_first_actor("scores")
         asteroid = cast.get_first_actor("Asteroids")
         beam = cast.get_first_actor("Beams")
+        asteroids = asteroid.get_segments()[0:]
+        beams = beam.get_segments()[0:]
 
-        if beam.get_position().equals(asteroid.get_position()):
-            points = asteroid.get_points()
-            score.add_points(points)
-            asteroid.reset()
-            beam.reset()
+        for asteroid in asteroids:
+            for beam in beams:
+                if beam.get_position().equals(asteroid.get_position()):
+                    points = asteroid.get_points()
+                    score.add_points(points)
+                    asteroid.reset()
+                    beam.reset()
             
         
     
@@ -61,8 +65,9 @@ class HandleCollisionsAction(Action):
         ship = cast.get_first_actor("Ship")
         asteroid = cast.get_second_actor("Asteroids")
         score = cast.get_first_actor("scores")
+        asteroids = asteroid.get_segments()[0:]
         
-        for asteroid in Asteroids:
+        for asteroid in asteroids:
             if ship.get_position().equals(asteroid.get_position()):
                 self._is_game_over = True
                 score.add_points(25)
