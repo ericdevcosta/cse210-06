@@ -1,4 +1,3 @@
-from tokenize import Pointfloat
 import constants
 from asteroids.shared.color import Color
 from asteroids.shared.point import Point

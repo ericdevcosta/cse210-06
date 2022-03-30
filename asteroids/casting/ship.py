@@ -1,4 +1,3 @@
-from distutils.command.build_scripts import first_line_re
 import constants
 from asteroids.casting.actor import Actor
 from asteroids.shared.point import Point
