@@ -10,6 +10,7 @@ FRAME_RATE = 15
 FONT_SIZE = 15
 CAPTION = "Asteroids"
 SHIP_LENGTH = 1
+BEAM_LENGTH = 2
 WHITE = Color(255, 255, 255)
 RED = Color(255, 0, 0)
 YELLOW = Color(255, 255, 0)
