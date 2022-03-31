@@ -38,7 +38,7 @@ class ship(Actor):
         for i in range(constants.SHIP_LENGTH):
             position = Point(x - i * constants.CELL_SIZE, y)
             velocity = Point(1 * constants.CELL_SIZE, 0)
-            text = "V" 
+            text = "🚀" 
             color = constants.YELLOW 
             
             segment = Actor()
