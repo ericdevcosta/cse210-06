@@ -54,6 +54,6 @@ class ControlActorsAction(Action):
             
         
             
-        rider = cast.get_first_actor("Riders")
-        rider.turn_head(self._direction)
+        ship = cast.get_first_actor("ships")
+        ship.turn_head(self._direction)
         
