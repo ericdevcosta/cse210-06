@@ -47,3 +47,6 @@ class Ship(Actor):
             segment.set_text(text)
             segment.set_color(color)
             self._segments.append(segment)
+            
+    def turn_head(self, velocity):
+        self._segments[0].set_velocity(velocity)
