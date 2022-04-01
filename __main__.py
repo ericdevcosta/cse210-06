@@ -2,7 +2,7 @@ import constants
 
 from asteroids.casting.cast import Cast
 from asteroids.casting.beam import Beam
-from asteroids.casting.score import Score
+#from asteroids.casting.score import Score
 from asteroids.casting.ship import Ship
 from asteroids.casting.asteroid import Asteroid
 from asteroids.scripting.script import Script
@@ -22,9 +22,9 @@ def main():
     # create the cast
     cast = Cast()
     cast.add_actor("beams", Beam())
-    cast.add_actor("ships", Ship("player1"))
-    cast.add_actor("scores", Score("player1"))
-    cast.add_actor("asterroids", Asteroid())
+    cast.add_actor("ships", Ship())
+    #cast.add_actor("scores", Score("player1"))
+    cast.add_actor("asteroids", Asteroid())
    
     # start the game
     keyboard_service = KeyboardService()
