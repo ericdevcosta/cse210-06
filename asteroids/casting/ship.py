@@ -2,7 +2,7 @@ import constants
 from asteroids.casting.actor import Actor
 from asteroids.shared.point import Point
 
-class ship(Actor):
+class Ship(Actor):
     """
     
     

@@ -4,7 +4,7 @@ from asteroids.casting.actor import Actor
 from asteroids.shared.point import Point
 
 
-class asteroid(Actor):
+class Asteroid(Actor):
     """
     Asteroids that fly through space.
     
@@ -34,7 +34,7 @@ class asteroid(Actor):
           segment.set_position(position)
           segment.set_text("@@@\n@@@\n@@@")
           segment.set_color(constants.RED)
-          self._segments.append(segment)
+          #self._segments.append(segment)
           self.set_position(position)
 
     def get_segments(self):

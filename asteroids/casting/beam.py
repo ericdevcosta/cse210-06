@@ -1,9 +1,9 @@
 import constants
-from casting.actor import Actor
+from asteroids.casting.actor import Actor
 from asteroids.shared.point import Point
 
 
-class beam(Actor):
+class Beam(Actor):
     """
     
     
