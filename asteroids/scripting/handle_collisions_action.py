@@ -62,10 +62,10 @@ class HandleCollisionsAction(Action):
         Args:
             cast (Cast): The cast of Actors in the game.
         """
-        ship = cast.get_first_actor("Ship")
-        asteroid = cast.get_second_actor("Asteroids")
+        ship = cast.get_first_actor("ship")
+        asteroid = cast.get_first_actor("asteroids")
         score = cast.get_first_actor("scores")
-        asteroids = asteroid.get_segments()[0:]
+        asteroids = cast.get_actors("asteroids")
         
         for asteroid in asteroids:
             if ship.get_position().equals(asteroid.get_position()):
@@ -95,6 +95,8 @@ class HandleCollisionsAction(Action):
             message.set_text("You have been Hit! , Your score is: ", score)
             message.set_position(position)
             cast.add_actor("messages", message)
+            asteroids = asteroid.get_segments()[0:]
+
 
             for asteroid in asteroids:
                 asteroid.set_color(constants.WHITE)

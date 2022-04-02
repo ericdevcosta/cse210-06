@@ -22,7 +22,7 @@ class Ship(Actor):
     def move_next(self, velocity):
         # move all segments
         for segment in self._segments:
-            segment.move_next()
+            segment.move_next(velocity)
         # update velocities
         for i in range(len(self._segments) - 1, 0, -1):
             trailing = self._segments[i]
