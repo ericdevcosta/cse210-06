@@ -30,9 +30,9 @@ class DrawActorsAction(Action):
             script (Script): The script of Actions in the game.
         """
         score = cast.get_first_actor("scores")
-        beam = cast.get_first_actor("Beams")
-        ship = cast.get_first_actor("Ships")
-        asteroid = cast.get_first_actor("Asteroids")
+        beam = cast.get_first_actor("beams")
+        ship = cast.get_first_actor("ships")
+        asteroid = cast.get_first_actor("asteroids")
         messages = cast.get_actors("messages")
 
         self._video_service.clear_buffer()
