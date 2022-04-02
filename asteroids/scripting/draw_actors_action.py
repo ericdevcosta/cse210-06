@@ -39,6 +39,6 @@ class DrawActorsAction(Action):
         self._video_service.draw_actor(beam)
         self._video_service.draw_actors(asteroids)
         self._video_service.draw_actor(ship)
-        self._video_service.draw_actor(score)
+        #self._video_service.draw_actor(score)
         self._video_service.draw_actors(messages, True)
         self._video_service.flush_buffer()
