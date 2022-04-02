@@ -12,5 +12,6 @@ class MoveActorsAction(Action):
         ship = cast.get_first_actor("ships")
 
         for actor in actors:
-            actor.move_next()
+            velocity = actor.get_velocity()
+            actor.move_next(velocity)
             
