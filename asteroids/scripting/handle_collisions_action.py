@@ -41,8 +41,8 @@ class HandleCollisionsAction(Action):
             cast (Cast): The cast of Actors in the game.
         """
         score = cast.get_first_actor("scores")
-        asteroid = cast.get_first_actor("Asteroids")
-        beam = cast.get_first_actor("Beams")
+        asteroid = cast.get_first_actor("asteroids")
+        beam = cast.get_first_actor("beams")
         asteroids = asteroid.get_segments()[0:]
         beams = beam.get_segments()[0:]
 
@@ -62,8 +62,8 @@ class HandleCollisionsAction(Action):
         Args:
             cast (Cast): The cast of Actors in the game.
         """
-        ship = cast.get_first_actor("ship")
-        asteroid = cast.get_first_actor("asteroids")
+        ship = cast.get_first_actor("ships")
+        #asteroid = cast.get_first_actor("asteroids")
         score = cast.get_first_actor("scores")
         asteroids = cast.get_actors("asteroids")
         
